@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mediaminder"
+version = "0.1.0"
+description = "Find and analyze media mentions"
+authors = ["Cameron Pope <cameron@theaboutbox.com>"]
+license = "Commercial"
+readme = "README.md"
+packages = [ { include = "MediaMinder" } ]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.1.17"
+
+
+[tool.poetry.group.dev.dependencies]
+nbdev = "^2.3.20"
+jupyterlab-quarto = "^0.3.3"
+jupyterlab = "^4.1.8"
+ruff = "^0.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
